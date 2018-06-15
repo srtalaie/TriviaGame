@@ -1,0 +1,12 @@
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.question{
+    margin: 35px 0;
+}
+
+input[type="radio"]{
+    margin-left: 15px;
+}
