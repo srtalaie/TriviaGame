@@ -1,20 +1,23 @@
 $(document).ready(function(){
     let right = 0;
     let wrong = 0;
-    let count = 60;
+    let count = 300;
     let timer;
     
     let userAnswer = []
 
     $("input[type=radio]").click(function(){
         userAnswer.push($(this).val());
-        console.log(userAnswer);
     });
     
     $('#submit').on('click', function(){
-        checkAnswers(userAnswer);
-        checkScore();
-        clearInterval(timer);
+        if (count === 300){
+            alert("You didn't click the begin the quiz button did ya");
+        } else {
+            checkAnswers(userAnswer);
+            checkScore();
+            clearInterval(timer);
+        }
     });
 
     function checkAnswers(arr){
@@ -38,20 +41,25 @@ $(document).ready(function(){
     }
 
     function quizzTimer(){
-        if (count >= 1){
+        if (count > 0){
             timer = setInterval(timerFunction, 1000);
-        } else {
-            clearInterval(timer);
-            $('#timer').text('Timer: Times Up!')
-            checkAnswers(userAnswer);
-            checkScore()
-        }
+        } 
     }
 
     function timerFunction(){
         count--;
         $('#timer').text('Time: ' + count)
+        gameEnd();
     }
 
-    $('#quizz-timer-button').click(quizzTimer);
+    function gameEnd(){
+        if (count < 0){
+            $('#timer').html('<p>Timer: Times Up!<p>');
+            checkAnswers(userAnswer);
+            checkScore();
+            clearInterval(timer);
+        }
+    }
+
+    $('#quizz-timer-button').on('click',quizzTimer);
 });

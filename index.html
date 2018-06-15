@@ -10,44 +10,55 @@
 </head>
 <body>
     <div class="container">
-        <h1>Trivia</h1>
-        <div class="game">
-        <button id="quizz-timer-button">Begin Quiz!</button>
-        <div id="timer">Time: 60</div>
+        <div class="score"></div>
+        <div class="header-area">
+            <h1>Order of Operations Math Quiz</h1>
+            <div class="game">
+            <p>Please click Begin Quiz when you are Ready. And Remember PEMDAS.</p>
+            <button id="quizz-timer-button">Begin Quiz!</button>
+            <div id="timer">Time: 300</div>
+        </div>
         <form id="quizz">
             <form id="#quizz-form-1">
                 <div class="question">
-                    <p>Question 1: Dummy Question</p>
-                    <input type="radio" name="answer" value="Right-Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
+                    <p>Question 1: &radic;144 x 13 / 3 + 5</p>
+                    <input type="radio" name="answer" value="Right-Answer">57
+                    <input type="radio" name="answer" value="Answer">44
+                    <input type="radio" name="answer" value="Answer">19.5
+                    <input type="radio" name="answer" value="Answer">63
                 </div>
             </form>
             <form id="quizz-form-2">
                 <div class="question">
-                    <p>Question 2: Dummy Question</p>
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Right-Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
+                    <p>Question 2: -8 + 9 x 6 - (&radic;(16 + 48))</p>
+                    <input type="radio" name="answer" value="Answer">26
+                    <input type="radio" name="answer" value="Answer">54
+                    <input type="radio" name="answer" value="Right-Answer">38
+                    <input type="radio" name="answer" value="Answer">-36
                 </div>
             </form>
             <form id="quizz-form-3">
                 <div class="question">
-                    <p>Question 2: Dummy Question</p>
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Right-Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
-                    <input type="radio" name="answer" value="Answer">Answer
+                    <p>Question 3: 10 - (-7) x ((-5)-10)<sup>2</sup> + -7</p>
+                    <input type="radio" name="answer" value="Answer">-1585
+                    <input type="radio" name="answer" value="Right-Answer">1578
+                    <input type="radio" name="answer" value="Answer">958
+                    <input type="radio" name="answer" value="Answer">-1564
+                </div>
+            </form>
+            <form id="quizz-form-4">
+                <div class="question">
+                    <p>Question 4: ((-10) x (-5)<sup>2</sup> - (-10)) (-5) x (-11)</p>
+                    <input type="radio" name="answer" value="Answer">-255
+                    <input type="radio" name="answer" value="Answer">385
+                    <input type="radio" name="answer" value="Answer">-215
+                    <input type="radio" name="answer" value="Right-Answer">-295
                 </div>
             </form>
             <button type="submit" id="submit">Submit</button>
         </form>
         </div>
-        <div class="score"></div>
     </div>
-    
     
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
