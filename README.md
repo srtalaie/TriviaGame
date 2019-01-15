@@ -1,2 +1,5 @@
 # TriviaGame
-Homework Assignment 5 - Trivia Game
+
+Trivia Game built out using HTML, CSS, and Javascript.
+
+Order of Operations math quiz. Can you answer all of the questions correctly before time runs out?
